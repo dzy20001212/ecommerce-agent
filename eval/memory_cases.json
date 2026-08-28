@@ -1,0 +1,24 @@
+[
+  {
+    "id": "memory_001",
+    "turns": [
+      {
+        "question": "我的订单号是10001"
+      },
+      {
+        "question": "它发货了吗？",
+        "expected_tool": "query_order",
+        "expected_args": {
+          "order_id": "10001"
+        }
+      },
+      {
+        "question": "那物流到哪里了？",
+        "expected_tool": "query_logistics",
+        "expected_args": {
+          "order_id": "10001"
+        }
+      }
+    ]
+  }
+]

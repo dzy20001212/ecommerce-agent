@@ -1,0 +1,48 @@
+[
+    {
+        "question": "AirSound Pro支持主动降噪吗？",
+        "expected_tools": ["search_product"]
+    },
+    {
+        "question": "订单10001发货了吗？",
+        "expected_tools": ["query_order"]
+    },
+    {
+        "question": "订单10001的快递到哪里了？",
+        "expected_tools": ["query_logistics"]
+    },
+    {
+        "question": "商品签收以后还能退货吗？",
+        "expected_tools": ["search_policy"]
+    },
+    {
+        "question": "我要找人工客服",
+        "expected_tools": ["transfer_to_human"]
+    },
+    {
+        "question": "订单10001里的商品支持主动降噪吗？",
+        "expected_tools": [
+            "query_order",
+            "search_product"
+        ]
+    },
+    {
+        "question": "订单10001买的是什么？快递到哪里了？",
+        "expected_tools": [
+            "query_order",
+            "query_logistics"
+        ]
+    },
+    {
+        "question": "订单99999发货了吗？",
+        "expected_tools": ["query_order"]
+    },
+    {
+        "question": "SuperPhone Ultra多少钱？",
+        "expected_tools": ["search_product"]
+    },
+    {
+        "question": "你好",
+        "expected_tools": []
+    }
+]

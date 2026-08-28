@@ -1,0 +1,14 @@
+{
+    "10001": {
+        "company": "顺丰速运",
+        "tracking_no": "SF10001001",
+        "status": "运输中",
+        "latest": "快件已到达上海转运中心"
+    },
+    "10002": {
+        "company": null,
+        "tracking_no": null,
+        "status": "暂未发货",
+        "latest": "暂无物流信息"
+    }
+}

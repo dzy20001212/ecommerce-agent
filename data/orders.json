@@ -1,0 +1,12 @@
+{
+    "10001": {
+        "product": "AirSound Pro",
+        "status": "已发货",
+        "quantity": 1
+    },
+    "10002": {
+        "product": "SmartWatch X1",
+        "status": "待发货",
+        "quantity": 1
+    }
+}

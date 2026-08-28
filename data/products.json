@@ -1,0 +1,14 @@
+{
+    "AirSound Pro": {
+        "price": 799,
+        "noise_cancelling": true,
+        "color": "black",
+        "category": "耳机"
+    },
+    "SmartWatch X1": {
+        "price": 1299,
+        "waterproof": true,
+        "color": "silver",
+        "category": "智能手表"
+    }
+}
