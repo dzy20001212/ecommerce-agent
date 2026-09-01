@@ -1,0 +1,37 @@
+[
+  {
+    "id": "route_001",
+    "question": "AirSound Pro多少钱？",
+    "expected_route": "product"
+  },
+  {
+    "id": "route_002",
+    "question": "AirSound Pro支持主动降噪吗？",
+    "expected_route": "product"
+  },
+  {
+    "id": "route_003",
+    "question": "查询订单10001",
+    "expected_route": "order"
+  },
+  {
+    "id": "route_004",
+    "question": "订单10001物流到哪里了？",
+    "expected_route": "order"
+  },
+  {
+    "id": "route_005",
+    "question": "商品签收以后可以退货吗？",
+    "expected_route": "service"
+  },
+  {
+    "id": "route_006",
+    "question": "退款政策是什么？",
+    "expected_route": "service"
+  },
+  {
+    "id": "route_007",
+    "question": "帮我转人工客服",
+    "expected_route": "service"
+  }
+]

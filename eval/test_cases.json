@@ -36,7 +36,7 @@
       "order_id": "10001"
     },
     "expected_keywords": [
-      "已发货"
+      "已发货","已经发货"
     ],
     "should_block": false
   },
