@@ -1,0 +1,35 @@
+[
+  {
+    "id": "handoff_001",
+    "question": "订单10001里的商品可以退货吗？",
+    "expected_agents": [
+      "order",
+      "service"
+    ],
+    "expected_handoff_count": 1
+  },
+  {
+    "id": "handoff_002",
+    "question": "查询订单10001",
+    "expected_agents": [
+      "order"
+    ],
+    "expected_handoff_count": 0
+  },
+  {
+    "id": "handoff_003",
+    "question": "商品签收以后可以退货吗？",
+    "expected_agents": [
+      "service"
+    ],
+    "expected_handoff_count": 0
+  },
+  {
+    "id": "handoff_004",
+    "question": "订单99999里的商品可以退货吗？",
+    "expected_agents": [
+      "order"
+    ],
+    "expected_handoff_count": 0
+  }
+]

@@ -36,6 +36,15 @@ service:
 退款、退货、换货、售后政策、人工客服。
 
 必须只从 product、order、service 中选择一个。
+
+特别规则：
+
+如果用户问题同时包含明确的订单信息
+以及退款、退货、换货等售后需求，
+优先路由到 order。
+
+因为系统需要先查询订单事实，
+再将结果交给 Service Agent。
 """
 
 structured_model = (

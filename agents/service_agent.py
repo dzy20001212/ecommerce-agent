@@ -47,16 +47,30 @@ service_agent = create_agent(
 
 
 def run_service_agent(
-    user_query: str
+    user_query: str,
+    shared_context: str = ""
 ) -> str:
+
+    content = f"""
+用户原始问题：
+{user_query}
+
+其他Agent已经查询到的业务信息：
+{shared_context}
+
+请结合以上业务信息处理售后问题。
+如果需要查询退货、退款或换货政策，
+请调用 search_policy。
+
+不要编造业务信息。
+"""
 
     result = service_agent.invoke(
         {
             "messages": [
                 {
                     "role": "user",
-                    "content":
-                        user_query,
+                    "content": content,
                 }
             ]
         }
