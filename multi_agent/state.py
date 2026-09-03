@@ -106,3 +106,13 @@ class MultiAgentState(
 
     # Observability预留
     request_id: str
+
+    node_latencies: dict[str, float]
+
+    tool_calls: list[str]
+
+    llm_calls: int
+
+    errors: list[str]
+
+    total_latency_ms: float

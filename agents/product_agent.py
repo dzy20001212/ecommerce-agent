@@ -5,7 +5,9 @@ from agents.model import create_model
 from tools import (
     search_product,
 )
-
+from observability.agent_metrics import (
+    summarize_agent_messages,
+)
 
 model = create_model()
 
@@ -40,9 +42,9 @@ product_agent = create_agent(
 )
 
 
-def run_product_agent(
+def run_product_agent_detailed(
     user_query: str
-) -> str:
+):
 
     result = product_agent.invoke(
         {
@@ -56,7 +58,21 @@ def run_product_agent(
         }
     )
 
-    return (
-        result["messages"][-1]
-        .content
+
+    return summarize_agent_messages(
+        result["messages"]
     )
+
+
+def run_product_agent(
+    user_query: str
+) -> str:
+
+    detail = (
+        run_product_agent_detailed(
+            user_query
+        )
+    )
+
+    return detail["answer"]
+

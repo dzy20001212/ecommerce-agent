@@ -1,0 +1,51 @@
+{"timestamp": "2026-09-03T10:45:01.226", "request_id": "req_727f35c0b7", "event": "test", "message": "hello"}
+{"timestamp": "2026-09-03T11:32:06.027", "request_id": "req_f87d10ac7a", "event": "request_start", "query": "查询订单10001"}
+{"timestamp": "2026-09-03T11:32:06.030", "request_id": "req_f87d10ac7a", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T11:32:07.160", "request_id": "req_f87d10ac7a", "event": "supervisor_end", "route": "order", "latency_ms": 1129.053199896589}
+{"timestamp": "2026-09-03T11:32:09.167", "request_id": "req_f87d10ac7a", "event": "request_end", "total_latency_ms": 3139.8823999334127, "route": "order", "visited_agents": ["order"], "tool_calls": [], "llm_calls": 1, "handoff_count": 0}
+{"timestamp": "2026-09-03T11:38:02.040", "request_id": "req_4e857f607d", "event": "request_start", "query": "订单10001里的商品可以退货吗？"}
+{"timestamp": "2026-09-03T11:38:02.042", "request_id": "req_4e857f607d", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T11:38:03.244", "request_id": "req_4e857f607d", "event": "supervisor_end", "route": "order", "latency_ms": 1201.983599923551}
+{"timestamp": "2026-09-03T11:38:08.299", "request_id": "req_4e857f607d", "event": "request_end", "total_latency_ms": 6258.168600033969, "route": "order", "visited_agents": ["order", "service"], "tool_calls": [], "llm_calls": 1, "handoff_count": 1}
+{"timestamp": "2026-09-03T11:38:29.727", "request_id": "req_0f091eb407", "event": "request_start", "query": "AirSound Pro多少钱？"}
+{"timestamp": "2026-09-03T11:38:29.730", "request_id": "req_0f091eb407", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T11:38:30.417", "request_id": "req_0f091eb407", "event": "supervisor_end", "route": "product", "latency_ms": 686.4894998725504}
+{"timestamp": "2026-09-03T11:38:30.417", "request_id": "req_0f091eb407", "event": "node_start", "node": "product"}
+{"timestamp": "2026-09-03T11:38:32.281", "request_id": "req_0f091eb407", "event": "tool_used", "agent": "product", "tool": "search_product"}
+{"timestamp": "2026-09-03T11:38:32.281", "request_id": "req_0f091eb407", "event": "agent_end", "agent": "product", "latency_ms": 1862.9262999165803, "llm_calls": 2}
+{"timestamp": "2026-09-03T11:38:32.282", "request_id": "req_0f091eb407", "event": "request_end", "total_latency_ms": 2552.934200037271, "route": "product", "visited_agents": ["product"], "tool_calls": ["search_product"], "llm_calls": 3, "handoff_count": 0}
+{"timestamp": "2026-09-03T11:38:53.666", "request_id": "req_dfabae81f7", "event": "request_start", "query": "商品签收以后可以退货吗？"}
+{"timestamp": "2026-09-03T11:38:53.667", "request_id": "req_dfabae81f7", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T11:38:54.536", "request_id": "req_dfabae81f7", "event": "supervisor_end", "route": "service", "latency_ms": 868.5322001110762}
+{"timestamp": "2026-09-03T11:38:56.668", "request_id": "req_dfabae81f7", "event": "request_end", "total_latency_ms": 3001.6238999087363, "route": "service", "visited_agents": ["service"], "tool_calls": [], "llm_calls": 1, "handoff_count": 0}
+{"timestamp": "2026-09-03T11:39:06.745", "request_id": "req_745eef9b73", "event": "request_start", "query": "type logs\\week7_observability.jsonl"}
+{"timestamp": "2026-09-03T11:39:06.747", "request_id": "req_745eef9b73", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T11:39:07.486", "request_id": "req_745eef9b73", "event": "supervisor_end", "route": "service", "latency_ms": 738.5047001298517}
+{"timestamp": "2026-09-03T11:39:09.539", "request_id": "req_745eef9b73", "event": "request_end", "total_latency_ms": 2793.8459999859333, "route": "service", "visited_agents": ["service"], "tool_calls": [], "llm_calls": 1, "handoff_count": 0}
+{"timestamp": "2026-09-03T11:52:55.735", "request_id": "req_584d1be09b", "event": "request_start", "query": "AirSound Pro多少钱？"}
+{"timestamp": "2026-09-03T11:52:55.740", "request_id": "req_584d1be09b", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T11:52:56.799", "request_id": "req_584d1be09b", "event": "supervisor_end", "route": "product", "latency_ms": 1058.8693998288363}
+{"timestamp": "2026-09-03T11:52:56.800", "request_id": "req_584d1be09b", "event": "node_start", "node": "product"}
+{"timestamp": "2026-09-03T11:52:58.175", "request_id": "req_584d1be09b", "event": "tool_used", "agent": "product", "tool": "search_product"}
+{"timestamp": "2026-09-03T11:52:58.176", "request_id": "req_584d1be09b", "event": "agent_end", "agent": "product", "latency_ms": 1375.0259999651462, "llm_calls": 2}
+{"timestamp": "2026-09-03T11:52:58.176", "request_id": "req_584d1be09b", "event": "request_end", "total_latency_ms": 2440.898299915716, "route": "product", "visited_agents": ["product"], "tool_calls": ["search_product"], "llm_calls": 3, "handoff_count": 0}
+{"timestamp": "2026-09-03T11:54:39.496", "request_id": "req_99b87b5180", "event": "request_start", "query": "查询订单10001"}
+{"timestamp": "2026-09-03T11:54:39.499", "request_id": "req_99b87b5180", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T11:54:40.214", "request_id": "req_99b87b5180", "event": "supervisor_end", "route": "order", "latency_ms": 715.0076001416892}
+{"timestamp": "2026-09-03T11:54:42.207", "request_id": "req_99b87b5180", "event": "request_end", "total_latency_ms": 2709.6780000720173, "route": "order", "visited_agents": ["order"], "tool_calls": [], "llm_calls": 1, "handoff_count": 0}
+{"timestamp": "2026-09-03T11:54:56.718", "request_id": "req_72af6e7e35", "event": "request_start", "query": "订单10001物流到哪里了？"}
+{"timestamp": "2026-09-03T11:54:56.719", "request_id": "req_72af6e7e35", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T11:54:57.267", "request_id": "req_72af6e7e35", "event": "supervisor_end", "route": "order", "latency_ms": 548.3923000283539}
+{"timestamp": "2026-09-03T11:54:59.420", "request_id": "req_72af6e7e35", "event": "request_end", "total_latency_ms": 2702.250399859622, "route": "order", "visited_agents": ["order"], "tool_calls": [], "llm_calls": 1, "handoff_count": 0}
+{"timestamp": "2026-09-03T11:55:21.279", "request_id": "req_55340ebc9b", "event": "request_start", "query": "商品签收以后可以退货吗？"}
+{"timestamp": "2026-09-03T11:55:21.280", "request_id": "req_55340ebc9b", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T11:55:21.818", "request_id": "req_55340ebc9b", "event": "supervisor_end", "route": "service", "latency_ms": 537.5727999489754}
+{"timestamp": "2026-09-03T11:55:23.746", "request_id": "req_55340ebc9b", "event": "request_end", "total_latency_ms": 2466.0704999696463, "route": "service", "visited_agents": ["service"], "tool_calls": [], "llm_calls": 1, "handoff_count": 0}
+{"timestamp": "2026-09-03T11:55:34.654", "request_id": "req_b04adcdf14", "event": "request_start", "query": "订单10001里的商品可以退货吗？"}
+{"timestamp": "2026-09-03T11:55:34.655", "request_id": "req_b04adcdf14", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T11:55:35.273", "request_id": "req_b04adcdf14", "event": "supervisor_end", "route": "order", "latency_ms": 617.7872000262141}
+{"timestamp": "2026-09-03T11:55:39.916", "request_id": "req_b04adcdf14", "event": "request_end", "total_latency_ms": 5262.296200031415, "route": "order", "visited_agents": ["order", "service"], "tool_calls": [], "llm_calls": 1, "handoff_count": 1}
+{"timestamp": "2026-09-03T11:55:51.928", "request_id": "req_72a2e4fe26", "event": "request_start", "query": "python run_observability_report.py"}
+{"timestamp": "2026-09-03T11:55:51.931", "request_id": "req_72a2e4fe26", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T11:55:52.758", "request_id": "req_72a2e4fe26", "event": "supervisor_end", "route": "service", "latency_ms": 826.9293000921607}
+{"timestamp": "2026-09-03T11:55:54.307", "request_id": "req_72a2e4fe26", "event": "request_end", "total_latency_ms": 2378.1854000408202, "route": "service", "visited_agents": ["service"], "tool_calls": [], "llm_calls": 1, "handoff_count": 0}

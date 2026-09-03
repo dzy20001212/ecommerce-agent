@@ -7,6 +7,9 @@ from tools import (
     transfer_to_human,
 )
 
+from observability.agent_metrics import (
+    summarize_agent_messages,
+)
 
 model = create_model()
 
@@ -46,10 +49,10 @@ service_agent = create_agent(
 )
 
 
-def run_service_agent(
+def run_service_agent_detailed(
     user_query: str,
     shared_context: str = ""
-) -> str:
+):
 
     content = f"""
 用户原始问题：
@@ -59,24 +62,41 @@ def run_service_agent(
 {shared_context}
 
 请结合以上业务信息处理售后问题。
-如果需要查询退货、退款或换货政策，
+如果需要查询退款、退货或换货政策，
 请调用 search_policy。
 
 不要编造业务信息。
 """
+
 
     result = service_agent.invoke(
         {
             "messages": [
                 {
                     "role": "user",
-                    "content": content,
+                    "content":
+                        content,
                 }
             ]
         }
     )
 
-    return (
-        result["messages"][-1]
-        .content
+
+    return summarize_agent_messages(
+        result["messages"]
     )
+
+
+def run_service_agent(
+    user_query: str,
+    shared_context: str = ""
+) -> str:
+
+    detail = (
+        run_service_agent_detailed(
+            user_query,
+            shared_context
+        )
+    )
+
+    return detail["answer"]

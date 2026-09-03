@@ -7,6 +7,9 @@ from tools import (
     query_logistics,
 )
 
+from observability.agent_metrics import (
+    summarize_agent_messages,
+)
 
 model = create_model()
 
@@ -46,9 +49,9 @@ order_agent = create_agent(
 )
 
 
-def run_order_agent(
+def run_order_agent_detailed(
     user_query: str
-) -> str:
+):
 
     result = order_agent.invoke(
         {
@@ -62,7 +65,20 @@ def run_order_agent(
         }
     )
 
-    return (
-        result["messages"][-1]
-        .content
+
+    return summarize_agent_messages(
+        result["messages"]
     )
+
+
+def run_order_agent(
+    user_query: str
+) -> str:
+
+    detail = (
+        run_order_agent_detailed(
+            user_query
+        )
+    )
+
+    return detail["answer"]
