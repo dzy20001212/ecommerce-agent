@@ -49,3 +49,79 @@
 {"timestamp": "2026-09-03T11:55:51.931", "request_id": "req_72a2e4fe26", "event": "node_start", "node": "supervisor"}
 {"timestamp": "2026-09-03T11:55:52.758", "request_id": "req_72a2e4fe26", "event": "supervisor_end", "route": "service", "latency_ms": 826.9293000921607}
 {"timestamp": "2026-09-03T11:55:54.307", "request_id": "req_72a2e4fe26", "event": "request_end", "total_latency_ms": 2378.1854000408202, "route": "service", "visited_agents": ["service"], "tool_calls": [], "llm_calls": 1, "handoff_count": 0}
+{"timestamp": "2026-09-03T12:20:24.573", "request_id": "req_c26541437d", "event": "request_start", "query": "查询订单10001"}
+{"timestamp": "2026-09-03T12:20:24.576", "request_id": "req_c26541437d", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T12:20:25.193", "request_id": "req_c26541437d", "event": "supervisor_end", "route": "order", "latency_ms": 616.444299928844}
+{"timestamp": "2026-09-03T12:20:25.194", "request_id": "req_c26541437d", "event": "node_start", "node": "order"}
+{"timestamp": "2026-09-03T12:20:26.281", "request_id": "req_c26541437d", "event": "tool_used", "agent": "order", "tool": "query_order"}
+{"timestamp": "2026-09-03T12:20:26.281", "request_id": "req_c26541437d", "event": "agent_end", "agent": "order", "latency_ms": 1086.9571999646723, "llm_calls": 2}
+{"timestamp": "2026-09-03T12:20:26.282", "request_id": "req_c26541437d", "event": "request_end", "total_latency_ms": 1708.7119999341667, "route": "order", "visited_agents": ["order"], "tool_calls": ["query_order"], "llm_calls": 3, "handoff_count": 0}
+{"timestamp": "2026-09-03T12:20:37.551", "request_id": "req_e00b080bb1", "event": "request_start", "query": "订单10001里的商品可以退货吗？"}
+{"timestamp": "2026-09-03T12:20:37.552", "request_id": "req_e00b080bb1", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T12:20:38.225", "request_id": "req_e00b080bb1", "event": "supervisor_end", "route": "order", "latency_ms": 672.6907000411302}
+{"timestamp": "2026-09-03T12:20:38.226", "request_id": "req_e00b080bb1", "event": "node_start", "node": "order"}
+{"timestamp": "2026-09-03T12:20:40.386", "request_id": "req_e00b080bb1", "event": "tool_used", "agent": "order", "tool": "query_order"}
+{"timestamp": "2026-09-03T12:20:40.386", "request_id": "req_e00b080bb1", "event": "handoff", "from_agent": "order", "to_agent": "service", "reason": "订单事实已经查询完成，用户还有售后需求，交给Service Agent。"}
+{"timestamp": "2026-09-03T12:20:40.387", "request_id": "req_e00b080bb1", "event": "agent_end", "agent": "order", "latency_ms": 2160.4935999494046, "llm_calls": 2}
+{"timestamp": "2026-09-03T12:20:40.388", "request_id": "req_e00b080bb1", "event": "node_start", "node": "service"}
+{"timestamp": "2026-09-03T12:20:42.561", "request_id": "req_e00b080bb1", "event": "tool_used", "agent": "service", "tool": "search_policy"}
+{"timestamp": "2026-09-03T12:20:42.562", "request_id": "req_e00b080bb1", "event": "agent_end", "agent": "service", "latency_ms": 2173.9631998352706, "llm_calls": 2}
+{"timestamp": "2026-09-03T12:20:42.563", "request_id": "req_e00b080bb1", "event": "request_end", "total_latency_ms": 5012.289699865505, "route": "order", "visited_agents": ["order", "service"], "tool_calls": ["query_order", "search_policy"], "llm_calls": 5, "handoff_count": 1}
+{"timestamp": "2026-09-03T14:06:34.238", "request_id": "req_361c733509", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T14:06:35.599", "request_id": "req_361c733509", "event": "supervisor_end", "route": "product", "latency_ms": 1361.4724001381546}
+{"timestamp": "2026-09-03T14:06:35.602", "request_id": "req_361c733509", "event": "node_start", "node": "product"}
+{"timestamp": "2026-09-03T14:06:38.693", "request_id": "req_361c733509", "event": "tool_used", "agent": "product", "tool": "search_product"}
+{"timestamp": "2026-09-03T14:06:38.694", "request_id": "req_361c733509", "event": "agent_end", "agent": "product", "latency_ms": 3091.7394999414682, "llm_calls": 2}
+{"timestamp": "2026-09-03T14:06:38.697", "request_id": "req_4e602bf9fc", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T14:06:40.027", "request_id": "req_4e602bf9fc", "event": "supervisor_end", "route": "product", "latency_ms": 1329.870899906382}
+{"timestamp": "2026-09-03T14:06:40.028", "request_id": "req_4e602bf9fc", "event": "node_start", "node": "product"}
+{"timestamp": "2026-09-03T14:06:43.576", "request_id": "req_4e602bf9fc", "event": "tool_used", "agent": "product", "tool": "search_product"}
+{"timestamp": "2026-09-03T14:06:43.577", "request_id": "req_4e602bf9fc", "event": "agent_end", "agent": "product", "latency_ms": 3548.014799831435, "llm_calls": 2}
+{"timestamp": "2026-09-03T14:06:43.579", "request_id": "req_e2b1e8dd1c", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T14:06:44.857", "request_id": "req_e2b1e8dd1c", "event": "supervisor_end", "route": "order", "latency_ms": 1277.2069000639021}
+{"timestamp": "2026-09-03T14:06:44.859", "request_id": "req_e2b1e8dd1c", "event": "node_start", "node": "order"}
+{"timestamp": "2026-09-03T14:06:48.306", "request_id": "req_e2b1e8dd1c", "event": "tool_used", "agent": "order", "tool": "query_order"}
+{"timestamp": "2026-09-03T14:06:48.307", "request_id": "req_e2b1e8dd1c", "event": "agent_end", "agent": "order", "latency_ms": 3447.4810000974685, "llm_calls": 2}
+{"timestamp": "2026-09-03T14:06:48.308", "request_id": "req_7dbfedbb4d", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T14:06:49.678", "request_id": "req_7dbfedbb4d", "event": "supervisor_end", "route": "order", "latency_ms": 1369.583799969405}
+{"timestamp": "2026-09-03T14:06:49.679", "request_id": "req_7dbfedbb4d", "event": "node_start", "node": "order"}
+{"timestamp": "2026-09-03T14:06:53.058", "request_id": "req_7dbfedbb4d", "event": "tool_used", "agent": "order", "tool": "query_order"}
+{"timestamp": "2026-09-03T14:06:53.059", "request_id": "req_7dbfedbb4d", "event": "agent_end", "agent": "order", "latency_ms": 3379.581799963489, "llm_calls": 2}
+{"timestamp": "2026-09-03T14:06:53.061", "request_id": "req_307ec491b7", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T14:06:54.457", "request_id": "req_307ec491b7", "event": "supervisor_end", "route": "order", "latency_ms": 1395.6931000575423}
+{"timestamp": "2026-09-03T14:06:54.458", "request_id": "req_307ec491b7", "event": "node_start", "node": "order"}
+{"timestamp": "2026-09-03T14:06:58.110", "request_id": "req_307ec491b7", "event": "tool_used", "agent": "order", "tool": "query_logistics"}
+{"timestamp": "2026-09-03T14:06:58.110", "request_id": "req_307ec491b7", "event": "tool_used", "agent": "order", "tool": "query_order"}
+{"timestamp": "2026-09-03T14:06:58.110", "request_id": "req_307ec491b7", "event": "agent_end", "agent": "order", "latency_ms": 3652.5560000445694, "llm_calls": 2}
+{"timestamp": "2026-09-03T14:06:58.112", "request_id": "req_1497ed788a", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T14:06:59.362", "request_id": "req_1497ed788a", "event": "supervisor_end", "route": "service", "latency_ms": 1250.0155000016093}
+{"timestamp": "2026-09-03T14:06:59.364", "request_id": "req_1497ed788a", "event": "node_start", "node": "service"}
+{"timestamp": "2026-09-03T14:07:02.763", "request_id": "req_1497ed788a", "event": "tool_used", "agent": "service", "tool": "search_policy"}
+{"timestamp": "2026-09-03T14:07:02.764", "request_id": "req_1497ed788a", "event": "agent_end", "agent": "service", "latency_ms": 3400.320699904114, "llm_calls": 2}
+{"timestamp": "2026-09-03T14:07:02.766", "request_id": "req_2f4bdcfe6c", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T14:07:03.835", "request_id": "req_2f4bdcfe6c", "event": "supervisor_end", "route": "service", "latency_ms": 1069.2031998187304}
+{"timestamp": "2026-09-03T14:07:03.836", "request_id": "req_2f4bdcfe6c", "event": "node_start", "node": "service"}
+{"timestamp": "2026-09-03T14:07:06.852", "request_id": "req_2f4bdcfe6c", "event": "tool_used", "agent": "service", "tool": "search_policy"}
+{"timestamp": "2026-09-03T14:07:06.852", "request_id": "req_2f4bdcfe6c", "event": "agent_end", "agent": "service", "latency_ms": 3016.2502001039684, "llm_calls": 2}
+{"timestamp": "2026-09-03T14:07:06.855", "request_id": "req_3db83bcfc4", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T14:07:07.994", "request_id": "req_3db83bcfc4", "event": "supervisor_end", "route": "service", "latency_ms": 1139.7997001186013}
+{"timestamp": "2026-09-03T14:07:07.995", "request_id": "req_3db83bcfc4", "event": "node_start", "node": "service"}
+{"timestamp": "2026-09-03T14:07:11.156", "request_id": "req_3db83bcfc4", "event": "tool_used", "agent": "service", "tool": "transfer_to_human"}
+{"timestamp": "2026-09-03T14:07:11.157", "request_id": "req_3db83bcfc4", "event": "agent_end", "agent": "service", "latency_ms": 3161.6451998706907, "llm_calls": 2}
+{"timestamp": "2026-09-03T14:07:11.159", "request_id": "req_8f45060178", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T14:07:12.458", "request_id": "req_8f45060178", "event": "supervisor_end", "route": "order", "latency_ms": 1299.3322000838816}
+{"timestamp": "2026-09-03T14:07:12.460", "request_id": "req_8f45060178", "event": "node_start", "node": "order"}
+{"timestamp": "2026-09-03T14:07:14.318", "request_id": "req_8f45060178", "event": "handoff", "from_agent": "order", "to_agent": "service", "reason": "订单事实已经查询完成，用户还有售后需求，交给Service Agent。"}
+{"timestamp": "2026-09-03T14:07:14.318", "request_id": "req_8f45060178", "event": "agent_end", "agent": "order", "latency_ms": 1858.4046000614762, "llm_calls": 1}
+{"timestamp": "2026-09-03T14:07:14.319", "request_id": "req_8f45060178", "event": "node_start", "node": "service"}
+{"timestamp": "2026-09-03T14:07:18.562", "request_id": "req_8f45060178", "event": "tool_used", "agent": "service", "tool": "search_policy"}
+{"timestamp": "2026-09-03T14:07:18.562", "request_id": "req_8f45060178", "event": "agent_end", "agent": "service", "latency_ms": 4243.814699817449, "llm_calls": 2}
+{"timestamp": "2026-09-03T14:07:18.564", "request_id": "req_a29d67540a", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-03T14:07:19.794", "request_id": "req_a29d67540a", "event": "supervisor_end", "route": "order", "latency_ms": 1229.530500015244}
+{"timestamp": "2026-09-03T14:07:19.795", "request_id": "req_a29d67540a", "event": "node_start", "node": "order"}
+{"timestamp": "2026-09-03T14:07:22.520", "request_id": "req_a29d67540a", "event": "tool_used", "agent": "order", "tool": "query_order"}
+{"timestamp": "2026-09-03T14:07:22.521", "request_id": "req_a29d67540a", "event": "handoff", "from_agent": "order", "to_agent": "service", "reason": "订单事实已经查询完成，用户还有售后需求，交给Service Agent。"}
+{"timestamp": "2026-09-03T14:07:22.521", "request_id": "req_a29d67540a", "event": "agent_end", "agent": "order", "latency_ms": 2726.267200196162, "llm_calls": 2}
+{"timestamp": "2026-09-03T14:07:22.523", "request_id": "req_a29d67540a", "event": "node_start", "node": "service"}
+{"timestamp": "2026-09-03T14:07:25.913", "request_id": "req_a29d67540a", "event": "tool_used", "agent": "service", "tool": "search_policy"}
+{"timestamp": "2026-09-03T14:07:25.913", "request_id": "req_a29d67540a", "event": "agent_end", "agent": "service", "latency_ms": 3389.7003000602126, "llm_calls": 2}

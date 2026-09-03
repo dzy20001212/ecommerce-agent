@@ -1,0 +1,321 @@
+{
+  "summary": {
+    "total_cases": 10,
+    "routing_accuracy": 1.0,
+    "agent_path_accuracy": 0.9,
+    "tool_accuracy": 0.9,
+    "handoff_accuracy": 0.9,
+    "answer_accuracy": 1.0,
+    "task_success_rate": 0.8,
+    "average_latency_ms": 5167.5855700159445,
+    "average_llm_calls": 3.3
+  },
+  "results": [
+    {
+      "id": "w7_001",
+      "question": "AirSound Pro多少钱？",
+      "route_correct": true,
+      "agent_path_correct": true,
+      "tool_correct": true,
+      "handoff_correct": true,
+      "answer_correct": true,
+      "passed": true,
+      "expected_route": "product",
+      "actual_route": "product",
+      "expected_agents": [
+        "product"
+      ],
+      "actual_agents": [
+        "product"
+      ],
+      "expected_tools": [
+        "search_product"
+      ],
+      "actual_tools": [
+        "search_product"
+      ],
+      "expected_handoff_count": 0,
+      "actual_handoff_count": 0,
+      "answer": "根据查询结果，**AirSound Pro** 的价格信息如下：\n\n- **价格**：**799元**\n- **颜色**：黑色\n- **类别**：耳机\n- **支持降噪**：是\n\n如果您还有其他关于这款耳机的问题（如功能、参数等），欢迎随时咨询！",
+      "latency_ms": 4461.111299926415,
+      "llm_calls": 3,
+      "request_id": "req_361c733509"
+    },
+    {
+      "id": "w7_002",
+      "question": "AirSound Pro支持主动降噪吗？",
+      "route_correct": true,
+      "agent_path_correct": true,
+      "tool_correct": true,
+      "handoff_correct": true,
+      "answer_correct": true,
+      "passed": true,
+      "expected_route": "product",
+      "actual_route": "product",
+      "expected_agents": [
+        "product"
+      ],
+      "actual_agents": [
+        "product"
+      ],
+      "expected_tools": [
+        "search_product"
+      ],
+      "actual_tools": [
+        "search_product"
+      ],
+      "expected_handoff_count": 0,
+      "actual_handoff_count": 0,
+      "answer": "根据查询结果，我来为您解答：\n\n**AirSound Pro 支持主动降噪功能。** ✅\n\n以下是该商品的相关信息：\n- **价格**：799元\n- **颜色**：黑色\n- **类别**：耳机\n- **主动降噪**：支持\n\n如果您还有其他关于这款耳机或其他商品的问题，欢迎随时咨询！",
+      "latency_ms": 4883.004100061953,
+      "llm_calls": 3,
+      "request_id": "req_4e602bf9fc"
+    },
+    {
+      "id": "w7_003",
+      "question": "查询订单10001",
+      "route_correct": true,
+      "agent_path_correct": true,
+      "tool_correct": true,
+      "handoff_correct": true,
+      "answer_correct": true,
+      "passed": true,
+      "expected_route": "order",
+      "actual_route": "order",
+      "expected_agents": [
+        "order"
+      ],
+      "actual_agents": [
+        "order"
+      ],
+      "expected_tools": [
+        "query_order"
+      ],
+      "actual_tools": [
+        "query_order"
+      ],
+      "expected_handoff_count": 0,
+      "actual_handoff_count": 0,
+      "answer": "根据查询结果，订单 **10001** 的信息如下：\n\n| 项目 | 详情 |\n|------|------|\n| **商品** | AirSound Pro |\n| **数量** | 1件 |\n| **订单状态** | 已发货 |\n\n您的订单已经发货了！如果您想了解物流运输的详细信息，比如快递公司、快递单号或最新的物流节点，请告诉我，我可以帮您进一步查询。",
+      "latency_ms": 4728.122100001201,
+      "llm_calls": 3,
+      "request_id": "req_e2b1e8dd1c"
+    },
+    {
+      "id": "w7_004",
+      "question": "查询订单10002",
+      "route_correct": true,
+      "agent_path_correct": true,
+      "tool_correct": true,
+      "handoff_correct": true,
+      "answer_correct": true,
+      "passed": true,
+      "expected_route": "order",
+      "actual_route": "order",
+      "expected_agents": [
+        "order"
+      ],
+      "actual_agents": [
+        "order"
+      ],
+      "expected_tools": [
+        "query_order"
+      ],
+      "actual_tools": [
+        "query_order"
+      ],
+      "expected_handoff_count": 0,
+      "actual_handoff_count": 0,
+      "answer": "我为您查询到了订单10002的信息：\n\n**订单10002详情：**\n- **商品**：SmartWatch X1\n- **数量**：1件\n- **订单状态**：待发货\n\n目前您的订单还处于**待发货**状态，商家尚未发货。请问还有其他需要帮助的吗？",
+      "latency_ms": 4751.710900105536,
+      "llm_calls": 3,
+      "request_id": "req_7dbfedbb4d"
+    },
+    {
+      "id": "w7_005",
+      "question": "订单10001物流到哪里了？",
+      "route_correct": true,
+      "agent_path_correct": true,
+      "tool_correct": true,
+      "handoff_correct": true,
+      "answer_correct": true,
+      "passed": true,
+      "expected_route": "order",
+      "actual_route": "order",
+      "expected_agents": [
+        "order"
+      ],
+      "actual_agents": [
+        "order"
+      ],
+      "expected_tools": [
+        "query_logistics"
+      ],
+      "actual_tools": [
+        "query_logistics",
+        "query_order"
+      ],
+      "expected_handoff_count": 0,
+      "actual_handoff_count": 0,
+      "answer": "根据查询结果，以下是订单10001的物流信息：\n\n**订单信息：**\n- 商品：AirSound Pro（1件）\n- 订单状态：已发货\n\n**物流信息：**\n- 快递公司：顺丰速运\n- 快递单号：SF10001001\n- 物流状态：运输中\n- 最新节点：**快件已到达上海转运中心**\n\n您的包裹目前正在运输途中，已经到达上海转运中心，正在继续转运中。如果您需要了解更详细的物流节点信息，可以随时告诉我！",
+      "latency_ms": 5051.008200040087,
+      "llm_calls": 3,
+      "request_id": "req_307ec491b7"
+    },
+    {
+      "id": "w7_006",
+      "question": "商品签收以后可以退货吗？",
+      "route_correct": true,
+      "agent_path_correct": true,
+      "tool_correct": true,
+      "handoff_correct": true,
+      "answer_correct": true,
+      "passed": true,
+      "expected_route": "service",
+      "actual_route": "service",
+      "expected_agents": [
+        "service"
+      ],
+      "actual_agents": [
+        "service"
+      ],
+      "expected_tools": [
+        "search_policy"
+      ],
+      "actual_tools": [
+        "search_policy"
+      ],
+      "expected_handoff_count": 0,
+      "actual_handoff_count": 0,
+      "answer": "根据我们的售后政策，**商品签收后7天内支持无理由退货**。\n\n也就是说，只要您的商品在签收后的7天之内，就可以申请退货。请问您还有其他关于退货流程或条件的问题吗？比如商品是否需要保持完好、包装是否完整等，我可以为您进一步解答。",
+      "latency_ms": 4653.182999929413,
+      "llm_calls": 3,
+      "request_id": "req_1497ed788a"
+    },
+    {
+      "id": "w7_007",
+      "question": "退款政策是什么？",
+      "route_correct": true,
+      "agent_path_correct": true,
+      "tool_correct": true,
+      "handoff_correct": true,
+      "answer_correct": true,
+      "passed": true,
+      "expected_route": "service",
+      "actual_route": "service",
+      "expected_agents": [
+        "service"
+      ],
+      "actual_agents": [
+        "service"
+      ],
+      "expected_tools": [
+        "search_policy"
+      ],
+      "actual_tools": [
+        "search_policy"
+      ],
+      "expected_handoff_count": 0,
+      "actual_handoff_count": 0,
+      "answer": "根据查询到的退款政策，为您解答如下：\n\n**退款政策：**\n- 商品**未发货**时，可以申请退款。\n\n如果您需要了解退货或换货的相关政策，或者有其他售后问题，欢迎继续咨询，我会为您详细解答。",
+      "latency_ms": 4088.335300097242,
+      "llm_calls": 3,
+      "request_id": "req_2f4bdcfe6c"
+    },
+    {
+      "id": "w7_008",
+      "question": "帮我转人工客服",
+      "route_correct": true,
+      "agent_path_correct": true,
+      "tool_correct": true,
+      "handoff_correct": true,
+      "answer_correct": true,
+      "passed": true,
+      "expected_route": "service",
+      "actual_route": "service",
+      "expected_agents": [
+        "service"
+      ],
+      "actual_agents": [
+        "service"
+      ],
+      "expected_tools": [
+        "transfer_to_human"
+      ],
+      "actual_tools": [
+        "transfer_to_human"
+      ],
+      "expected_handoff_count": 0,
+      "actual_handoff_count": 0,
+      "answer": "好的，我已经为您转接人工客服，请稍等片刻，人工客服会尽快接入为您服务。\n\n请问还有其他需要帮助的吗？",
+      "latency_ms": 4303.836799925193,
+      "llm_calls": 3,
+      "request_id": "req_3db83bcfc4"
+    },
+    {
+      "id": "w7_009",
+      "question": "订单10001里的商品可以退货吗？",
+      "route_correct": true,
+      "agent_path_correct": true,
+      "tool_correct": false,
+      "handoff_correct": true,
+      "answer_correct": true,
+      "passed": false,
+      "expected_route": "order",
+      "actual_route": "order",
+      "expected_agents": [
+        "order",
+        "service"
+      ],
+      "actual_agents": [
+        "order",
+        "service"
+      ],
+      "expected_tools": [
+        "query_order",
+        "search_policy"
+      ],
+      "actual_tools": [
+        "search_policy"
+      ],
+      "expected_handoff_count": 1,
+      "actual_handoff_count": 1,
+      "answer": "根据我们的退货政策，**商品签收后7天内支持无理由退货**。\n\n不过，我需要提醒您，我无法直接查询您订单10001的具体状态和商品信息。要确认您的订单是否符合退货条件，还需要了解以下几点：\n\n1. **是否已签收超过7天** - 如果超过7天，可能无法享受无理由退货\n2. **商品是否完好** - 无理由退货通常要求商品保持完好、不影响二次销售\n3. **商品类型** - 部分特殊商品（如定制类、生鲜类等）可能不支持无理由退货\n\n如果您能提供更多关于订单10001的信息（如签收时间、商品类型等），我可以帮您进一步判断是否符合退货条件。\n\n请问您的订单是什么时候签收的？商品是什么类型呢？",
+      "latency_ms": 7405.280699953437,
+      "llm_calls": 4,
+      "request_id": "req_8f45060178"
+    },
+    {
+      "id": "w7_010",
+      "question": "订单99999里的商品可以退货吗？",
+      "route_correct": true,
+      "agent_path_correct": false,
+      "tool_correct": true,
+      "handoff_correct": false,
+      "answer_correct": true,
+      "passed": false,
+      "expected_route": "order",
+      "actual_route": "order",
+      "expected_agents": [
+        "order"
+      ],
+      "actual_agents": [
+        "order",
+        "service"
+      ],
+      "expected_tools": [
+        "query_order"
+      ],
+      "actual_tools": [
+        "query_order",
+        "search_policy"
+      ],
+      "expected_handoff_count": 0,
+      "actual_handoff_count": 1,
+      "answer": "根据查询到的退货政策，我为您解答如下：\n\n**关于退货政策：**\n- 商品**签收后7天内**支持无理由退货。\n\n**关于您的订单99999：**\n很抱歉，我这边没有查询到订单99999的相关信息。不过，退货政策本身是通用的，只要您的商品符合以下条件，就可以申请退货：\n1. 商品在**签收后7天内**\n2. 商品属于支持无理由退货的品类\n\n如果您能确认订单信息或提供正确的订单编号，我可以进一步协助您。请问您还有其他需要帮助的吗？",
+      "latency_ms": 7350.263300118968,
+      "llm_calls": 5,
+      "request_id": "req_a29d67540a"
+    }
+  ]
+}

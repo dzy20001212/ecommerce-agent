@@ -1,0 +1,102 @@
+[
+  {
+    "id": "w7_001",
+    "question": "AirSound Pro多少钱？",
+    "expected_route": "product",
+    "expected_agents": ["product"],
+    "expected_tools": ["search_product"],
+    "expected_handoff_count": 0,
+    "expected_any_keywords": ["799"],
+    "forbidden_keywords": ["1299"]
+  },
+  {
+    "id": "w7_002",
+    "question": "AirSound Pro支持主动降噪吗？",
+    "expected_route": "product",
+    "expected_agents": ["product"],
+    "expected_tools": ["search_product"],
+    "expected_handoff_count": 0,
+    "expected_any_keywords": ["降噪"],
+    "forbidden_keywords": []
+  },
+  {
+    "id": "w7_003",
+    "question": "查询订单10001",
+    "expected_route": "order",
+    "expected_agents": ["order"],
+    "expected_tools": ["query_order"],
+    "expected_handoff_count": 0,
+    "expected_any_keywords": ["已发货", "已经发货"],
+    "forbidden_keywords": ["待发货"]
+  },
+  {
+    "id": "w7_004",
+    "question": "查询订单10002",
+    "expected_route": "order",
+    "expected_agents": ["order"],
+    "expected_tools": ["query_order"],
+    "expected_handoff_count": 0,
+    "expected_any_keywords": ["待发货"],
+    "forbidden_keywords": ["已发货", "已经发货"]
+  },
+  {
+    "id": "w7_005",
+    "question": "订单10001物流到哪里了？",
+    "expected_route": "order",
+    "expected_agents": ["order"],
+    "expected_tools": ["query_logistics"],
+    "expected_handoff_count": 0,
+    "expected_any_keywords": ["上海转运中心", "上海"],
+    "forbidden_keywords": []
+  },
+  {
+    "id": "w7_006",
+    "question": "商品签收以后可以退货吗？",
+    "expected_route": "service",
+    "expected_agents": ["service"],
+    "expected_tools": ["search_policy"],
+    "expected_handoff_count": 0,
+    "expected_any_keywords": ["7天", "7"],
+    "forbidden_keywords": []
+  },
+  {
+    "id": "w7_007",
+    "question": "退款政策是什么？",
+    "expected_route": "service",
+    "expected_agents": ["service"],
+    "expected_tools": ["search_policy"],
+    "expected_handoff_count": 0,
+    "expected_any_keywords": ["退款"],
+    "forbidden_keywords": []
+  },
+  {
+    "id": "w7_008",
+    "question": "帮我转人工客服",
+    "expected_route": "service",
+    "expected_agents": ["service"],
+    "expected_tools": ["transfer_to_human"],
+    "expected_handoff_count": 0,
+    "expected_any_keywords": ["人工"],
+    "forbidden_keywords": []
+  },
+  {
+    "id": "w7_009",
+    "question": "订单10001里的商品可以退货吗？",
+    "expected_route": "order",
+    "expected_agents": ["order", "service"],
+    "expected_tools": ["query_order", "search_policy"],
+    "expected_handoff_count": 1,
+    "expected_any_keywords": ["退货", "7"],
+    "forbidden_keywords": []
+  },
+  {
+    "id": "w7_010",
+    "question": "订单99999里的商品可以退货吗？",
+    "expected_route": "order",
+    "expected_agents": ["order"],
+    "expected_tools": ["query_order"],
+    "expected_handoff_count": 0,
+    "expected_any_keywords": ["未找到", "不存在", "没有查询到", "未查询到"],
+    "forbidden_keywords": []
+  }
+]
