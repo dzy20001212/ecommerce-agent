@@ -1,0 +1,58 @@
+{"timestamp": "2026-09-06T11:27:41.079", "request_id": "req_e3d7ee1b05", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-06T11:27:41.626", "request_id": "req_e3d7ee1b05", "event": "supervisor_end", "route": "product", "latency_ms": 547.3977001383901}
+{"timestamp": "2026-09-06T11:27:41.627", "request_id": "req_e3d7ee1b05", "event": "node_start", "node": "product"}
+{"timestamp": "2026-09-06T11:27:42.998", "request_id": "req_e3d7ee1b05", "event": "tool_used", "agent": "product", "tool": "search_product"}
+{"timestamp": "2026-09-06T11:27:42.998", "request_id": "req_e3d7ee1b05", "event": "agent_end", "agent": "product", "latency_ms": 1370.299099944532, "llm_calls": 2}
+{"timestamp": "2026-09-06T12:20:40.824", "request_id": "req_6f9ea2a54a", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-06T12:20:41.347", "request_id": "req_6f9ea2a54a", "event": "supervisor_end", "route": "order", "latency_ms": 523.4689998906106}
+{"timestamp": "2026-09-06T12:20:41.349", "request_id": "req_6f9ea2a54a", "event": "node_start", "node": "order"}
+{"timestamp": "2026-09-06T12:20:42.915", "request_id": "req_6f9ea2a54a", "event": "tool_used", "agent": "order", "tool": "query_order"}
+{"timestamp": "2026-09-06T12:20:42.916", "request_id": "req_6f9ea2a54a", "event": "agent_end", "agent": "order", "latency_ms": 1566.8305000290275, "llm_calls": 2}
+{"timestamp": "2026-09-06T12:20:49.608", "request_id": "req_e10d8ad17e", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-06T12:20:50.047", "request_id": "req_e10d8ad17e", "event": "supervisor_end", "route": "order", "latency_ms": 438.61260008998215}
+{"timestamp": "2026-09-06T12:20:50.048", "request_id": "req_e10d8ad17e", "event": "node_start", "node": "order"}
+{"timestamp": "2026-09-06T12:20:51.994", "request_id": "req_e10d8ad17e", "event": "tool_used", "agent": "order", "tool": "query_order"}
+{"timestamp": "2026-09-06T12:20:51.994", "request_id": "req_e10d8ad17e", "event": "handoff", "from_agent": "order", "to_agent": "service", "reason": "订单事实已经查询完成，用户还有售后需求，交给Service Agent。"}
+{"timestamp": "2026-09-06T12:20:51.994", "request_id": "req_e10d8ad17e", "event": "agent_end", "agent": "order", "latency_ms": 1945.680300006643, "llm_calls": 2}
+{"timestamp": "2026-09-06T12:20:51.996", "request_id": "req_e10d8ad17e", "event": "node_start", "node": "service"}
+{"timestamp": "2026-09-06T12:20:54.065", "request_id": "req_e10d8ad17e", "event": "tool_used", "agent": "service", "tool": "search_policy"}
+{"timestamp": "2026-09-06T12:20:54.066", "request_id": "req_e10d8ad17e", "event": "agent_end", "agent": "service", "latency_ms": 2070.06340008229, "llm_calls": 2}
+{"timestamp": "2026-09-06T13:25:39.509", "request_id": "req_013c4ce4ef", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-06T13:25:40.414", "request_id": "req_013c4ce4ef", "event": "supervisor_end", "route": "product", "latency_ms": 905.2410000003874}
+{"timestamp": "2026-09-06T13:25:40.415", "request_id": "req_013c4ce4ef", "event": "node_start", "node": "product"}
+{"timestamp": "2026-09-06T13:25:42.088", "request_id": "req_013c4ce4ef", "event": "tool_used", "agent": "product", "tool": "search_product"}
+{"timestamp": "2026-09-06T13:25:42.089", "request_id": "req_013c4ce4ef", "event": "agent_end", "agent": "product", "latency_ms": 1673.0588001664728, "llm_calls": 2}
+{"timestamp": "2026-09-06T13:25:42.096", "request_id": "req_82a14cf960", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-06T13:25:42.925", "request_id": "req_82a14cf960", "event": "supervisor_end", "route": "order", "latency_ms": 829.3906000908464}
+{"timestamp": "2026-09-06T13:25:42.925", "request_id": "req_82a14cf960", "event": "node_start", "node": "order"}
+{"timestamp": "2026-09-06T13:25:44.702", "request_id": "req_82a14cf960", "event": "tool_used", "agent": "order", "tool": "query_order"}
+{"timestamp": "2026-09-06T13:25:44.703", "request_id": "req_82a14cf960", "event": "agent_end", "agent": "order", "latency_ms": 1776.7157999332994, "llm_calls": 2}
+{"timestamp": "2026-09-06T13:25:44.705", "request_id": "req_7e10f6a843", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-06T13:25:45.200", "request_id": "req_7e10f6a843", "event": "supervisor_end", "route": "service", "latency_ms": 495.69129990413785}
+{"timestamp": "2026-09-06T13:25:45.201", "request_id": "req_7e10f6a843", "event": "node_start", "node": "service"}
+{"timestamp": "2026-09-06T13:25:46.957", "request_id": "req_7e10f6a843", "event": "tool_used", "agent": "service", "tool": "search_policy"}
+{"timestamp": "2026-09-06T13:25:46.957", "request_id": "req_7e10f6a843", "event": "agent_end", "agent": "service", "latency_ms": 1756.2029999680817, "llm_calls": 2}
+{"timestamp": "2026-09-06T13:26:19.105", "request_id": "req_e188df8ad1", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-06T13:26:19.791", "request_id": "req_e188df8ad1", "event": "supervisor_end", "route": "product", "latency_ms": 686.3214999902993}
+{"timestamp": "2026-09-06T13:26:19.792", "request_id": "req_e188df8ad1", "event": "node_start", "node": "product"}
+{"timestamp": "2026-09-06T13:26:21.243", "request_id": "req_e188df8ad1", "event": "tool_used", "agent": "product", "tool": "search_product"}
+{"timestamp": "2026-09-06T13:26:21.243", "request_id": "req_e188df8ad1", "event": "agent_end", "agent": "product", "latency_ms": 1450.8473000023514, "llm_calls": 2}
+{"timestamp": "2026-09-06T13:26:21.244", "request_id": "req_9d5942a2ba", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-06T13:26:21.694", "request_id": "req_9d5942a2ba", "event": "supervisor_end", "route": "order", "latency_ms": 450.0080000143498}
+{"timestamp": "2026-09-06T13:26:21.695", "request_id": "req_9d5942a2ba", "event": "node_start", "node": "order"}
+{"timestamp": "2026-09-06T13:26:22.954", "request_id": "req_9d5942a2ba", "event": "tool_used", "agent": "order", "tool": "query_order"}
+{"timestamp": "2026-09-06T13:26:22.955", "request_id": "req_9d5942a2ba", "event": "agent_end", "agent": "order", "latency_ms": 1258.925500093028, "llm_calls": 2}
+{"timestamp": "2026-09-06T13:26:22.957", "request_id": "req_4d30316b01", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-06T13:26:23.371", "request_id": "req_4d30316b01", "event": "supervisor_end", "route": "service", "latency_ms": 412.8649001941085}
+{"timestamp": "2026-09-06T13:26:23.373", "request_id": "req_4d30316b01", "event": "node_start", "node": "service"}
+{"timestamp": "2026-09-06T13:26:24.989", "request_id": "req_4d30316b01", "event": "tool_used", "agent": "service", "tool": "search_policy"}
+{"timestamp": "2026-09-06T13:26:24.989", "request_id": "req_4d30316b01", "event": "agent_end", "agent": "service", "latency_ms": 1617.3706999979913, "llm_calls": 2}
+{"timestamp": "2026-09-06T13:38:22.050", "request_id": "req_f0eb9a747a", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-06T13:38:22.579", "request_id": "req_f0eb9a747a", "event": "supervisor_end", "route": "product", "latency_ms": 529.5989001169801}
+{"timestamp": "2026-09-06T13:38:22.581", "request_id": "req_f0eb9a747a", "event": "node_start", "node": "product"}
+{"timestamp": "2026-09-06T13:38:24.096", "request_id": "req_f0eb9a747a", "event": "tool_used", "agent": "product", "tool": "search_product"}
+{"timestamp": "2026-09-06T13:38:24.097", "request_id": "req_f0eb9a747a", "event": "agent_end", "agent": "product", "latency_ms": 1515.4992998577654, "llm_calls": 2}
+{"timestamp": "2026-09-06T13:38:30.445", "request_id": "req_67d28aa43c", "event": "node_start", "node": "supervisor"}
+{"timestamp": "2026-09-06T13:38:30.922", "request_id": "req_67d28aa43c", "event": "supervisor_end", "route": "service", "latency_ms": 477.31249989010394}
+{"timestamp": "2026-09-06T13:38:30.924", "request_id": "req_67d28aa43c", "event": "node_start", "node": "service"}
+{"timestamp": "2026-09-06T13:38:32.682", "request_id": "req_67d28aa43c", "event": "agent_end", "agent": "service", "latency_ms": 1758.5933001246303, "llm_calls": 1}
